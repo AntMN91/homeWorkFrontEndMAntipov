@@ -41,6 +41,7 @@
 //     return console.log (str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()}))
 //   }
 
+
 //   capitalize('мир труд май');
 
 // задание 6 
@@ -61,11 +62,26 @@
 
 // function removeChar (str) {
 //     const initialStr = str;
-//      console.log(initialStr.replace (/[a-zA-Zа-яА-Я0-9]/g,' '));
+//      console.log(initialStr.replace (/[^a-zA-Zа-яА-Я0-9]/g,''));
 //     return;
 // } 
 
+
 // removeChar ('17 мгновений весны');
+
+
+
+// function govnoStr (str) {
+//     let result = '';
+//         for (let i = 0; i < str.length; i++ ){
+//             if (str[i] >= 'а' && str[i] <= 'я' || str[i]>='0'&& str[i] <= 9) {
+//         result = result + str[i];
+//         }
+// }
+// return result;
+
+// }
+// console.log (govnoStr('17 : мгновений : весны :'));
 
 // задание 8
 
@@ -202,13 +218,13 @@
 
 // Задание 22
 
-function findWord(word,str) {
-    if (str.includes('word')){
-        console.log (true);
-    } else if (str.includes('word') !== word) {
-        console.log (false);
-    }
-    return;
-}
+// function findWord(word,str) {
+//     if (str.includes('word')){
+//         console.log (true);
+//     } else if (str.includes('word') !== word) {
+//         console.log (false);
+//     }
+//     return;
+// }
 
-findWord('word','Have the last word');
+// findWord('word','Have the last word');
