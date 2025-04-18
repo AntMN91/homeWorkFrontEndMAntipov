@@ -1,0 +1,116 @@
+:root {
+    --text-color-header: #FDFDFD;
+    --background-color-btnConsul : #1A3E3E;
+    --form-bg-color : rgba(255, 255, 255, 0.2);
+    --border-form-color : #E1E3E4;
+}
+
+
+/* Основные стили */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    max-width: 1080px;
+    width: 100%;
+    font-size: 50px;
+    color: var(--text-color-header);
+}
+
+.d-flex {
+    display: flex;
+}
+.header{
+    background-image: url('../img/bg-img-header.jpg');
+    justify-content: center;
+}
+
+.header-nav {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1180px;
+    flex-wrap: wrap;
+}
+
+.header-menu {
+    align-items: center;
+    gap:40px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.btn-nav-menu {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 600;
+    color: var(--text-color-header);
+    text-decoration: none;
+    font-family: 'NunitoSans';
+    white-space: nowrap;
+}
+
+.consultation-btn {
+    background-color: var(--background-color-btnConsul);
+    max-width: 157px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--text-color-header);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.header-container-form{
+    margin-top: 30%;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.form {
+    background-color: var(--form-bg-color);
+    max-width: 1180px;
+    width: 100%;
+    height: 161px;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.select-form{
+    background-color: var(--form-bg-color);
+    width: 270px;
+    height: 52px;
+    border : 1px solid var(--border-form-color);
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px;
+    font-size: 16px;
+    color: var(--text-color-header);
+    font-weight: 700;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.select-form option {
+    background-color:grey;
+}
+
+.select-wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color-header);
+    margin-top: 8px;
+}
+
+.form-btn {
+    width: 213px;
+    height: 52px;
+    background-color: #FDFDFD;
+    padding: 16px 36px;
+}
